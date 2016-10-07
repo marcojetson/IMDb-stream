@@ -2,7 +2,7 @@ function key(success) {
   chrome.storage.sync.get(null, store => {
     let key = store[OPTION_PREFIX + 'key'];
     if (key) {
-      success(store.key);
+      success(key);
     }
   });
 }
