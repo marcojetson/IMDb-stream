@@ -1,0 +1,63 @@
+body {
+  font-family: 'Helvetica Neue', 'Lucida Grande', sans-serif;
+  font-size: 75%;
+  margin: 21px 10px 24px 10px
+}
+
+header {
+  border-bottom: 1px solid #eee;
+  max-width: 718px;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin-bottom: 0.9em;
+}
+
+h2 {
+  font-size: 1.2em;
+  margin-bottom: 0.8em;
+}
+
+h1, h2, h3 {
+  -webkit-user-select: none;
+  font-weight: normal;
+  line-height: 1;
+}
+
+input[type=text] {
+  border: 1px solid #bfbfbf;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: #444;
+  font: inherit;
+  margin: 0;
+  min-height: 2em;
+  padding: 3px;
+  outline: none;
+  padding-bottom: 4px;
+}
+
+input[type=text]:focus {
+  border-color: #4981f6;
+}
+
+#navigation {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 155;
+}
+
+#navigation h1 {
+  margin: 21px 0 18px 23px;
+}
+
+#mainview {
+  margin-left: 155px;
+}
+
+.settings-row {
+  margin: 0.65em 0;
+}

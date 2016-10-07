@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "IMDb stream",
+  "version": "1.0",
+
+  "description": "Let's you stream movies from IMDb, for free",
+  "icons": {"256": "icon.png"},
+
+  "page_action": {
+    "default_icon": "icon.png"
+  },
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["http://www.imdb.com/title/tt*"],
+      "js": [
+        "constants.js",
+        "contentscript.js"
+      ]
+    }
+  ],
+  "options_page": "options.html",
+  "permissions": [
+    "storage",
+    "http://www.vidsourceapi.com/"
+  ]
+}
