@@ -20,7 +20,7 @@
     {
       "matches": ["http://www.imdb.com/title/tt*"],
       "js": [
-        "constants.js",
+        "VidSourceClient.js",
         "contentscript.js"
       ]
     }

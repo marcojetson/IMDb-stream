@@ -4,7 +4,7 @@
 
 # IMDb stream
 
-A Google Chrome extension that let's you watch IMDb movies, for free
+A Google Chrome extension that let's you watch IMDb movies and shows, for free
 
 ## Usage
 

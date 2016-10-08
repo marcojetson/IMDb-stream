@@ -1,29 +1,31 @@
 function key(success) {
   chrome.storage.sync.get(null, store => {
-    let key = store[OPTION_PREFIX + 'key'];
+    let key = store['option.key'];
     if (key) {
       success(key);
     }
   });
 }
 
-function get(url, success) {
-  let req = new XMLHttpRequest();
-  req.open('GET', url, true);
-  req.onload = function () {
-    if (this.status >= 200 && this.status < 400) {
-      success(this.response);
-    }
-  }
-  req.send();
-};
+function fetch(key, success) {
+  let client = new VidSourceClient(key);
 
-function url(key) {
-  return STREAM_URL_ENDPOINT + '&apikey=' + key + '&imdbid=' + location.href.match(/\/title\/tt(\d+)/)[1];
+  switch (document.querySelector('meta[property="og:type"]').content) {
+    case 'video.episode':
+      client.show(
+        document.querySelector('.titleParent > a').href.match(/\/title\/tt(\d+)/)[1],
+        document.querySelector('.bp_heading').innerHTML.match(/(\d+)/g)[0],
+        document.querySelector('.bp_heading').innerHTML.match(/(\d+)/g)[1],
+        success
+      );
+      break;
+    default:
+      client.movie(location.href.match(/\/title\/tt(\d+)/)[1], success);
+  }
 }
 
 function notify(url) {
   chrome.runtime.sendMessage({url});
 }
 
-key(key => get(url(key), res => notify(res.match(/"EmbedUrl":\s*"([^"]+)"/)[1])));
+key(key => fetch(key, notify));

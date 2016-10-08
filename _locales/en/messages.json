@@ -1,12 +1,12 @@
 {
   "ext_description": {
-  	"message": "Let's you watch IMDb movies, for free"
+    "message": "Let's you watch IMDb movies and shows, for free"
   },
   "options_key_title": {
     "message": "VidSource API key"
   },
   "options_key_label": {
-    "message": "An API key is required in order to retrieve movie links. Create your own on <a href=\"http://vidsourceapi.com/\" target=\"_blank\">VidSource</a>."
+    "message": "An API key is required. Create your own on <a href=\"http://vidsourceapi.com/\" target=\"_blank\">VidSource</a>."
   },
   "options_save": {
     "message": "Save"
