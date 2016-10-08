@@ -6,17 +6,11 @@
 
 A Google Chrome extension that let's you stream movies from IMDb, for free
 
-## Installation
-
-1. Download zip and extract
-2. Navigate to ```chrome://extensions/```
-3. Check "Developer mode"
-4. Select "Load unpacked extension"
-
 ## Usage
 
-1. Set up your [VidSource](http://vidsourceapi.com/) API key
-2. Visit any IMDb movie page, if stream is available icon will be clickable
+1. Add to Chrome
+2. Set up your [VidSource](http://vidsourceapi.com/) API key
+3. Visit any IMDb movie page, if stream is available icon will be clickable
 
 ## Legal
 
