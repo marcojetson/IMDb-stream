@@ -8,3 +8,7 @@ chrome.runtime.onMessage.addListener((req, sender) => {
 chrome.pageAction.onClicked.addListener(tab => {
   window.open(urls[tab.id], '', 'menubar=no&status=0&titlebar=0');
 });
+
+chrome.runtime.onInstalled.addListener(() => {
+  chrome.runtime.openOptionsPage();
+});
