@@ -1,0 +1,14 @@
+{
+  "ext_description": {
+  	"message": "Agrega streaming gratis a las películas de IMDb"
+  },
+  "options_key_title": {
+    "message": "Clave de VidSource"
+  },
+  "options_key_label": {
+    "message": "Es necesario una clave para poder utilizar esta extensión. Regístrate en <a href=\"http://vidsourceapi.com/\" target=\"_blank\">VidSource</a> para obtenerla."
+  },
+  "options_save": {
+    "message": "Guardar"
+  }
+}

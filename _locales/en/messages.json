@@ -1,0 +1,14 @@
+{
+  "ext_description": {
+  	"message": "Let's you stream movies from IMDb, for free"
+  },
+  "options_key_title": {
+    "message": "VidSource API key"
+  },
+  "options_key_label": {
+    "message": "An API key is required in order to retrieve movie links. Create your own on <a href=\"http://vidsourceapi.com/\" target=\"_blank\">VidSource</a>."
+  },
+  "options_save": {
+    "message": "Save"
+  }
+}

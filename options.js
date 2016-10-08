@@ -2,6 +2,10 @@ const OPTION_SELECTOR = '.option';
 
 const SAVE_SELECTOR = '#save';
 
+document.querySelectorAll('[i18n-content]').forEach(element => {
+  element.innerHTML = chrome.i18n.getMessage(element.getAttribute('i18n-content'));
+});
+
 let inputs = document.querySelectorAll(OPTION_SELECTOR);
 
 chrome.storage.sync.get(null, store => {

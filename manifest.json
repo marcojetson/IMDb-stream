@@ -3,7 +3,8 @@
   "name": "IMDb stream",
   "version": "1.0",
 
-  "description": "Let's you stream movies from IMDb, for free",
+  "default_locale": "en",
+  "description": "__MSG_ext_description__",
   "icons": {"256": "icon.png"},
 
   "page_action": {
