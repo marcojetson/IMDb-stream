@@ -6,23 +6,20 @@
     <link rel="icon" type="image/png" href="icon.png">
   </head>
   <body>
-    <div id="navigation">
-      <h1>IMDb stream</h1>
-    </div>
-    <div id="mainview">
-      <header>
-        <h1>Options</h1>
-      </header>
-      <section>
-        <h2>VidSource API key</h2>
-        <div class="settings-row">
-          <span>An API key is required in order to retrieve movie links. Create your own on <a href="http://vidsourceapi.com/" target="_blank">VidSource</a>.</span>
+    <section>
+      <h3>VidSource API key</h3>
+      <div class="settings-row">
+        <span>An API key is required in order to retrieve movie links. Create your own on <a href="http://vidsourceapi.com/" target="_blank">VidSource</a>.</span>
+      </div>
+      <div class="settings-row">
+        <input class="option" type="text" name="key">
+      </div>
+      <div class="action-area">
+        <div class="button-strip">
+          <button id="save">Save</button>
         </div>
-        <div class="settings-row">
-          <input class="option" type="text" name="key">
-        </div>
-      </section>
-    </div>
+      </div>
+    </section>
     <script src="constants.js"></script>
     <script src="options.js"></script>
   </body>
