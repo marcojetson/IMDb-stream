@@ -10,5 +10,11 @@
   },
   "options_save": {
     "message": "Guardar"
+  },
+  "menu_search": {
+    "message": "Buscar..."
+  },
+  "menu_history": {
+    "message": "Historial"
   }
 }

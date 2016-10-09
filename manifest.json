@@ -30,6 +30,7 @@
     "chrome_style": true
   },
   "permissions": [
+    "contextMenus",
     "storage",
     "http://www.vidsourceapi.com/"
   ]
