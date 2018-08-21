@@ -2,15 +2,6 @@
   "ext_description": {
     "message": "Mira gratis las películas y shows de IMDb"
   },
-  "options_key_title": {
-    "message": "Clave de VidSource"
-  },
-  "options_key_label": {
-    "message": "Es necesario una clave para poder utilizar esta extensión. Regístrate en <a href=\"http://vidsourceapi.com/\" target=\"_blank\">VidSource</a> para obtenerla."
-  },
-  "options_save": {
-    "message": "Guardar"
-  },
   "menu_search": {
     "message": "Buscar..."
   },
