@@ -2,7 +2,7 @@ function StreamSourceClient() {
   this.webservice = "https://api.odb.to/";
 }
 
-StreamSourceClient.prototype.get = function(resource, params, success) {
+StreamSourceClient.prototype.get = function(params, success) {
   let req = new XMLHttpRequest();
   let uri = "embed?imdb_id=";
   Object.keys(params).forEach(key => (uri += "&" + key + "=" + params[key]));
