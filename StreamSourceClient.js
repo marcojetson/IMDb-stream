@@ -19,13 +19,9 @@ StreamSourceClient.prototype.get = function(params, success) {
 };
 
 StreamSourceClient.prototype.movie = function(id, success) {
-  return this.get("GetStreamEmbedUrlByIMDBID", { imdb_id: id }, success);
+  return this.get({ imdb_id: id }, success);
 };
 
 StreamSourceClient.prototype.show = function(id, session, episode, success) {
-  return this.get(
-    "GetEpisodeStreamEmbedUrlByIMDBID",
-    { imdb_id: id, s: session, e: episode },
-    success
-  );
+  return this.get({ imdb_id: id, s: session, e: episode }, success);
 };
