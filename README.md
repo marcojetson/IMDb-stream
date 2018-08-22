@@ -9,8 +9,7 @@ A Google Chrome extension that let's you watch IMDb movies and shows, for free
 ## Usage
 
 1. Add to Chrome
-2. Set up your [VidSource](http://vidsourceapi.com/) API key
-3. Visit any IMDb movie page, if stream is available icon will be clickable
+2. Visit any IMDb movie page, if stream is available icon will be clickable
 
 ## Legal
 

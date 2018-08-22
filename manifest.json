@@ -1,11 +1,11 @@
 {
   "manifest_version": 2,
   "name": "IMDb stream",
-  "version": "1.0",
+  "version": "1.1.0",
 
   "default_locale": "en",
   "description": "__MSG_ext_description__",
-  "icons": {"256": "icon.png"},
+  "icons": { "256": "icon.png" },
 
   "page_action": {
     "default_icon": "icon.png"
@@ -18,20 +18,9 @@
 
   "content_scripts": [
     {
-      "matches": ["http://www.imdb.com/title/tt*"],
-      "js": [
-        "VidSourceClient.js",
-        "contentscript.js"
-      ]
+      "matches": ["https://www.imdb.com/title/tt*"],
+      "js": ["StreamSourceClient.js", "contentscript.js"]
     }
   ],
-  "options_ui": {
-    "page": "options.html",
-    "chrome_style": true
-  },
-  "permissions": [
-    "contextMenus",
-    "storage",
-    "http://www.vidsourceapi.com/"
-  ]
+  "permissions": ["contextMenus", "https://api.odb.to/"]
 }
